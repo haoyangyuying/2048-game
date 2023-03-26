@@ -10,7 +10,7 @@ body {
 	grid-gap: 5px;
 	background-color: #ccc;
 	padding: 5px;
-	margin-bottom: 20px; /* Add this line */
+	margin-bottom: 20px;
     }
     
     .tile {
@@ -20,5 +20,29 @@ body {
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
+	border-radius: 5px; /* Add this line to round tile corners */
+    }
+    
+    /* Add the following block for button styling */
+    #controls {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 1rem;
+    }
+    
+    .move-button {
+	background-color: #8f7a66;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+	margin: 5px;
+	cursor: pointer;
+    }
+    
+    .move-button:hover {
+	background-color: #9d8970;
     }
     
