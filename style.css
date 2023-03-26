@@ -10,13 +10,13 @@ body {
 	grid-gap: 5px;
 	background-color: #ccc;
 	padding: 5px;
+	margin-bottom: 20px; /* Add this line */
     }
     
     .tile {
 	width: 100px;
 	height: 100px;
 	line-height: 100px;
-	background-color: #eee;
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
