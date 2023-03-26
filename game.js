@@ -130,3 +130,19 @@ for (const button of moveButtons) {
         moveTiles(direction);
     });
 }
+
+const resetBoard = () => {
+	for (let row = 0; row < 4; row++) {
+	    for (let col = 0; col < 4; col++) {
+		setTileValue(board[row][col], 0);
+	    }
+	}
+	spawnNumber();
+	spawnNumber();
+};
+
+// NEW: Listen for the restart button click event
+const restartButton = document.getElementById("restart-button");
+restartButton.addEventListener("click", () => {
+    resetBoard();
+});
